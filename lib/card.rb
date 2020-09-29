@@ -15,7 +15,6 @@ class Card
   end
 
   def convert_to_face_card(value)
-
     face_cards = { 1 => "Ace", 11 => "Jack", 12 => "Queen", 13 => "King" }
     if face_cards.keys.include?(value)
       face_card = face_cards[value]
@@ -26,7 +25,6 @@ class Card
 
   def to_s
     convert_to_face_card(value)
-
     return "#{value} of #{suit.to_s}"
   end
 

@@ -48,15 +48,19 @@ describe Card do
     let(:eight_spades){
       Card.new(8, :spades)
     }
+    let(:king_hearts){
+      Card.new(13, :hearts)
+    }
     it "Can retrieve the value of the card using a `.value`." do
       expect(eight_spades.value).must_equal 8
+      expect(king_hearts.value).must_equal 13
       # ensure that `.value works as expected`
     end
 
     it "Can retrieve the value of the card using a `.suit`." do
       expect(eight_spades.suit).must_equal :spades
+      expect(king_hearts.suit).must_equal :hearts
       # ensure that `.suit works as expected returning the symbol of the suit`
-
     end
   end
 
